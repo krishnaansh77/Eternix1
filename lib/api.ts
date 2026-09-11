@@ -1,4 +1,4 @@
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://127.0.0.1:8080'
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? ''
 
 export async function apiRequest<T>(path: string, options: RequestInit = {}): Promise<T> {
   const headers = new Headers(options.headers)
